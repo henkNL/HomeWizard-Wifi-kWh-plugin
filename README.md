@@ -22,3 +22,5 @@ The configuration is pretty self explaining. You just need the IP address of you
 | Port | The port on which to connect (80 is default) |
 | Data interval	| The interval for the data devices to be refreshed |
 | Debug	| Used by the developer to test stuff |
+
+Thanks to [Eraser3 ](https://github.com/Eraser3/HomeWizard-Wifi-p1-plugin)!
