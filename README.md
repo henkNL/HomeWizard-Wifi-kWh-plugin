@@ -12,7 +12,7 @@ The plugin creates a total of 2 devices:
 1. An energy meter that shows your current power usage and daily power draw
 2. A Wi-Fi signal strength meter that shows the current signal strength from the Wi-Fi P1 meter
 
-# Installation and setup (not tested yet)
+# Installation and setup
 ```bash
 cd domoticz/plugins
 git clone https://github.com/henkNL/HomeWizard-Wifi-kWh-plugin.git
