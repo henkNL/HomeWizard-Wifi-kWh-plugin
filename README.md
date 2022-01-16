@@ -1,5 +1,5 @@
 # HomeWizard-Wifi-kWh-plugin
-A Python plugin for Domoticz that creates several devices for the HomeWizard Wifi kWh meter
+A Python plugin for Domoticz that creates several devices for the HomeWizard Wifi (1 phase) kWh meter.
 
 ![HomeWizard Wi-Fi P1 meter](https://www.homewizard.nl/media/catalog/product/cache/e5430b9fa526b8a06edfa3b86f08b1c3/i/m/image_13_.png)
 
