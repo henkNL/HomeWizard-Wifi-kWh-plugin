@@ -12,6 +12,23 @@ The plugin creates a total of 2 devices:
 1. An energy meter that shows your current power usage and daily power draw
 2. A Wi-Fi signal strength meter that shows the current signal strength from the Wi-Fi P1 meter
 
+# Installation and setup (not tested yet)
+```bash
+cd domoticz/plugins
+git clone https://github.com/henkNL/HomeWizard-Wifi-kWh-plugin.git
+```
+
+Restart your Domoticz service with:
+
+```bash
+sudo service domoticz.sh restart
+```
+
+Now go to **Setup**, **Hardware** in your Domoticz interface. There you add
+**HomeWizard Wi-Fi kWh Meter - 1 phase**.
+
+Make sure you enter all the required fields.
+
 # Configuration
 
 The configuration is pretty self explaining. You just need the IP address of your Wi-Fi kWh meter. Make sure the IP address is static DHCP so it won't change over time.
@@ -24,3 +41,4 @@ The configuration is pretty self explaining. You just need the IP address of you
 | Debug	| Used by the developer to test stuff |
 
 Thanks to [Eraser3 ](https://github.com/Eraser3/HomeWizard-Wifi-p1-plugin)!
+
