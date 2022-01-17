@@ -13,21 +13,35 @@ The plugin creates a total of 2 devices:
 2. A Wi-Fi signal strength meter that shows the current signal strength from the Wi-Fi P1 meter
 
 # Installation and setup
+1. Clone repository into your domoticz plugins folder
 ```bash
 cd domoticz/plugins
-git clone https://github.com/henkNL/HomeWizard-Wifi-kWh-plugin.git
+git clone https://github.com/henkNL/HomeWizard-Wifi-kWh-plugin.git HomeWizard-Wifi-kWh
 ```
 
-Restart your Domoticz service with:
+2. Restart your Domoticz service with:
 
 ```bash
 sudo service domoticz.sh restart
 ```
-
-Now go to **Setup**, **Hardware** in your Domoticz interface. There you add
+3. Make sure that "Accept new Hardware Devices" is enabled in Domoticz settings
+4. Now go to **Setup**, **Hardware** in your Domoticz interface. There you add
 **HomeWizard Wi-Fi kWh Meter - 1 phase**.
 
 Make sure you enter all the required fields.
+
+# Plugin update
+
+1. Go to plugin folder and pull new version
+```
+cd domoticz/plugins/HomeWizard-Wifi-kWh
+git pull
+```
+2. Restart your Domoticz service with:
+
+```bash
+sudo service domoticz.sh restart
+```
 
 # Configuration
 
