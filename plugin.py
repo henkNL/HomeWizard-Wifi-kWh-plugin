@@ -92,7 +92,6 @@ class BasePlugin:
 
     def onMessage(self, Data, Status, Extra):
         self.dataIntervalCount += self.pluginInterval
-#        self.switchIntervalCount += self.pluginInterval
         
         if ( self.dataIntervalCount >= self.dataInterval ): 
             try:
@@ -113,10 +112,11 @@ class BasePlugin:
                 Domoticz.Error("Failed to read response data")
                 return
  
- #Elke x seconden van datainterval, afgeteld naar 0       
+#Meter uitlezen elke x seconden van datainterval, aftellen naar 0:   
         if ( self.dataIntervalCount >= self.dataInterval ):
             self.dataIntervalCount = 0
-#current usage aanmaken als deze niet bestaat, ander vullen met waarde          
+
+#Devices aanmaken als deze niet bestaan, ander vullen met waarde:
             try:
                 if ( self.active_power_id not in Devices ):
                     Domoticz.Device(Name="Current usage",  Unit=self.active_power_id, Type=243, Subtype=29).Create()
@@ -154,6 +154,7 @@ class BasePlugin:
         #Domoticz.Log("onStop called")
         return True
 
+#Meter uitlezen:
     def readMeter(self):
         try:
             APIdata = urllib.request.urlopen("http://" + Parameters["Address"] + ":" + Parameters["Port"] + "/api/v1/data").read()
