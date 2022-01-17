@@ -1,11 +1,11 @@
 ##           HomeWizard Wi-Fi kWh Meter 1 phase Plugin
 ##
 ##           Author:         henkNL thanks to Eraser
-##           Version:        0.0.2
+##           Version:        0.2
 ##           Last modified:  16-1-2022
 ##
 """
-<plugin key="HomeWizardWifi-kWh" name="HomeWizard Wi-Fi kWh Meter - 1 phase" author="henkNL" version="0.1" externallink="https://www.homewizard.nl/homewizard-wi-fi-kwh-meter">
+<plugin key="HomeWizardWifi-kWh" name="HomeWizard Wi-Fi kWh Meter - 1 phase" author="henkNL" version="0.2" externallink="https://www.homewizard.nl/homewizard-wi-fi-kwh-meter">
     <description>
         <h3>Devices</h3>
         <ul style="list-style-type:square">
