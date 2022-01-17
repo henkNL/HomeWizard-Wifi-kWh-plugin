@@ -156,7 +156,7 @@ class BasePlugin:
 
     def readMeter(self):
         try:
-            APIdata = urllib.request.urlopen("http://" + Parameters["Address"] + Parameters["Port"] + "/api/v1/data").read()
+            APIdata = urllib.request.urlopen("http://" + Parameters["Address"] + ":" + Parameters["Port"] + "/api/v1/data").read()
         except:
             Domoticz.Error("Failed to communicate with Wi-Fi kWh meter at ip: " + Parameters["Address"] + " with port: " + Parameters["Port"] + ", check ip/port settings!")
             return False
