@@ -42,6 +42,7 @@
 
 import Domoticz
 import json
+import http.client
 import urllib
 import urllib.request
 
