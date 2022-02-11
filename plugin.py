@@ -42,7 +42,6 @@
 
 import Domoticz
 import json
-import http.client
 import urllib
 import urllib.request
 
@@ -100,8 +99,8 @@ class BasePlugin:
                 self.wifi_strength = Data['wifi_strength']
                 self.total_power_import_t1_kwh = int(Data['total_power_import_t1_kwh'] * 1000)
                 self.total_power_export_t1_kwh = int(Data['total_power_export_t1_kwh'] * 1000)
-                self.active_power_w = Data['active_power_w']
-                self.active_power_l1_w = Data['active_power_l1_w']
+                self.active_power_w = int(Data['active_power_w'])
+                self.active_power_l1_w = int(Data['active_power_l1_w'])
                                 
                 if ( self.active_power_w >= 0):
                     self.import_active_power_w = self.active_power_w
